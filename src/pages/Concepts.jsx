@@ -5,7 +5,7 @@ class Concepts extends React.Component {
     return (
         <div className="page">
             <h1>Concepts</h1>
-            <table class="table">
+            <table className="table">
               <thead>
                 <tr>
                   <th scope="col">Feature</th>
@@ -18,9 +18,13 @@ class Concepts extends React.Component {
                   <td>Completed</td>
                 </tr>
                 <tr>
-                  <th scope="row">State Management (Redux/Mobx)</th>
+                  <th scope="row">Basic Form Stuff</th>
                   <td>Not Completed</td>
-                </tr>
+                </tr>                   
+                <tr>
+                  <th scope="row">State Management (Context/Redux/Mobx)</th>
+                  <td>Not Completed</td>
+                </tr>             
                 <tr>
                   <th scope="row">3rd Party API</th>
                   <td>Not Completed</td>
