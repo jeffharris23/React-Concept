@@ -18,11 +18,19 @@ class Concepts extends React.Component {
                   <td>Completed</td>
                 </tr>
                 <tr>
-                  <th scope="row">Basic Form Stuff</th>
+                  <th scope="row">Forms/Validation</th>
                   <td>Not Completed</td>
-                </tr>                   
+                </tr> 
                 <tr>
-                  <th scope="row">State Management (Context/Redux/Mobx)</th>
+                  <th scope="row">Route Guards</th>
+                  <td>Not Completed</td>
+                </tr>  
+                <tr>
+                  <th scope="row">Interceptors</th>
+                  <td>Not Completed</td>
+                </tr>                                                  
+                <tr>
+                  <th scope="row">State Management (Redux/Mobx)</th>
                   <td>Not Completed</td>
                 </tr>             
                 <tr>
@@ -30,7 +38,7 @@ class Concepts extends React.Component {
                   <td>Not Completed</td>
                 </tr>
                 <tr>
-                  <th scope="row">Firebase/OAuth Authentication</th>
+                  <th scope="row">Auth</th>
                   <td>Not Completed</td>
                 </tr>
                 <tr>

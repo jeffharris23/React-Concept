@@ -8,7 +8,7 @@ class Avatar extends React.Component {
   //   this.state = {name: 'Jim'};
   // }  
   render() {
-    const show = this.props.userName == '' ? 'hidden' : '';
+    const show = this.props.userName === '' ? 'hidden' : '';
 
     return (
       <div className={'avatar ' + show} >
