@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from '../../pages/Home';
 import Concepts from '../../pages/Concepts';
+import Form from '../../pages/Form';
 
 
 class Main extends React.Component {
@@ -14,6 +15,7 @@ class Main extends React.Component {
                         <Switch>
                             <Route exact path='/' component={Home}/>
                             <Route exact path='/concepts' component={Concepts}/>
+                            <Route exact path='/form' component={Form}/>
                         </Switch>
                     </div>
                 </div>
