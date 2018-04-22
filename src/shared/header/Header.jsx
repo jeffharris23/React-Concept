@@ -5,14 +5,27 @@ import './header.css';
 import NameContext from '../../state/context';
 
 class Header extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+          navOpen: false
+        };
+    }    
+
+    toggleNav = () => {
+        this.setState({
+            navOpen : !this.state.navOpen
+        });
+    }
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-light bg-light ">
                 <div className="container">
-                            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                                <span className="navbar-toggler-icon"></span>
+                            <button className="navbar-toggler" type="button">
+                                <span className="navbar-toggler-icon" onClick={this.toggleNav}></span>
                             </button>                
-                            <div className="collapse navbar-collapse pull-right" id="navbarNavAltMarkup">
+                            <div className={`${this.state.navOpen ? '' : 'collapse'} navbar-collapse pull-right`} id="navbarNavAltMarkup">
                                 <div className="navbar-nav">
                                     <NavLink exact to='/' className="nav-item nav-link" activeClassName="active">Home</NavLink>
                                     <NavLink exact to='/concepts' className="nav-item nav-link" activeClassName="active">Concepts</NavLink>
