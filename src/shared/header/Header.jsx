@@ -2,7 +2,11 @@ import * as React from 'react';
 import { NavLink } from 'react-router-dom';
 import Avatar from '../avatar/Avatar';
 import './header.css';
-import NameContext from '../../state/context';
+import { connect } from 'react-redux';
+
+function mapStateToProps(state) {
+    return { user: state.user };
+}
 
 class Header extends React.Component {
 
@@ -32,9 +36,8 @@ class Header extends React.Component {
                                     <NavLink exact to='/form' className="nav-item nav-link" activeClassName="active">Form</NavLink>
                                 </div>
                             </div>
-                            <NameContext.Consumer>
-                            {userName => <Avatar userName={userName}/>}
-                            </NameContext.Consumer>
+             
+                            <Avatar userName={this.props.user.name}/>
                             
                   
                 </div>
@@ -43,4 +46,5 @@ class Header extends React.Component {
     }
 }
 
-export default Header;
+export default connect(mapStateToProps)(Header);
+

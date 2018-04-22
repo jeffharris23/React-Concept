@@ -6,7 +6,7 @@ class Form extends React.Component {
     return (
         <div className="page">
             <h1>Form</h1>
-            <p>Sample form below using Formik/Yup form builder.</p>
+            <p>Sample form below using Formik/Yup form builder. This form connects to simple state management with Redux. State is not persistent, just here to demo Redux.</p>
             <div className="max-width pt-4">
                 <Userform/>
             </div>          
