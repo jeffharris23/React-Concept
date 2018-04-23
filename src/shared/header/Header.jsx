@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { NavLink } from 'react-router-dom';
-import Login from '../login/Login';
+import LoginBtn from '../login/LoginBtn';
 import './header.css';
 import { connect } from 'react-redux';
 
@@ -34,9 +34,10 @@ class Header extends React.Component {
                             <NavLink exact to='/' className="nav-item nav-link" activeClassName="active">Home</NavLink>
                             <NavLink exact to='/concepts' className="nav-item nav-link" activeClassName="active">Concepts</NavLink>
                             <NavLink exact to='/form' className="nav-item nav-link" activeClassName="active">Form</NavLink>
+                            <NavLink exact to='/dashboard' className="nav-item nav-link" activeClassName="active">Dashboard <small>(Logged in Only)</small></NavLink>
                         </div>
                     </div>
-                    <Login auth={this.props.auth}/>                  
+                    <LoginBtn auth={this.props.auth}/>                  
                 </div>
             </nav>
         );

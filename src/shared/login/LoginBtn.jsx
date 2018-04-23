@@ -2,7 +2,7 @@ import * as React from 'react';
 import './login.css';
 
 
-class Login extends React.Component {
+class LoginBtn extends React.Component {
     auth;
   constructor(props) {
     super(props);
@@ -38,4 +38,4 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+export default LoginBtn;

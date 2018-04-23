@@ -1,4 +1,5 @@
-import * as React from 'react';
+import React from 'react';
+import ConceptRow from '../components/ConceptRow';
 
 class Concepts extends React.Component {
   render() {
@@ -13,60 +14,19 @@ class Concepts extends React.Component {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <th scope="row">Routing</th>
-                  <td>Completed <i className="fas fa-check green"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row">Forms/Validation (Formik, Yup)</th>
-                  <td>Completed <i className="fas fa-check green"></i></td>
-                </tr> 
-                <tr>
-                  <th scope="row">State Management (Redux)</th>
-                  <td>Completed <i className="fas fa-check green"></i></td>
-                </tr> 
-                <tr>
-                  <th scope="row">React's version of Services</th>
-                  <td>Completed (Auth) <i className="fas fa-check green"></i></td>
-                </tr>   
-                <tr>
-                  <th scope="row">Auth (AuthO)</th>
-                  <td>Completed <i className="fas fa-check green"></i></td>
-                </tr>   
-                <tr>
-                  <th scope="row">Authenticated Route (auth guard)</th>
-                  <td>Not Complete <i className="fas fa-times red"></i></td>
-                </tr>                                    
-                <tr>
-                  <th scope="row">CLI stuff (component generators, build stuff)</th>
-                  <td>Not Complete <i className="fas fa-times red"></i></td>
-                </tr>                            
-                <tr>
-                  <th scope="row">Lazy Loading</th>
-                  <td>Not Complete <i className="fas fa-times red"></i></td>
-                </tr>          
-                <tr>
-                  <th scope="row">Integrate Css Compiler (Scss)</th>
-                  <td>Not Complete <i className="fas fa-times red"></i></td>
-                </tr>                          
-                <tr>
-                  <th scope="row">Animations</th>
-                  <td>Not Complete <i className="fas fa-times red"></i></td>
-                </tr>                                 
-
-                <tr>
-                  <th scope="row">Interceptors</th>
-                  <td>Not Complete <i className="fas fa-times red"></i></td>
-                </tr>                                                              
-                <tr>
-                  <th scope="row">3rd Party API</th>
-                  <td>Not Complete <i className="fas fa-times red"></i></td>
-                </tr>
-
-                <tr>
-                  <th scope="row">GraphQL</th>
-                  <td>Not Complete <i className="fas fa-times red"></i></td>
-                </tr>              
+                <ConceptRow name="Routing" status="Completed"/>
+                <ConceptRow name="Forms/Validation (Formik, Yup)" status="Completed"/>
+                <ConceptRow name="State Management (Redux)" status="Completed"/>
+                <ConceptRow name="React's version of Services" status="Completed"/>
+                <ConceptRow name="Auth (AuthO)" status="Completed"/>
+                <ConceptRow name="Authenticated Route (auth guard)" status="Completed"/>
+                <ConceptRow name="Interceptors/Middleware (add route class to body)" status="Incomplete"/>
+                <ConceptRow name="CLI stuff (component generators, build stuff)" status="Incomplete"/>
+                <ConceptRow name="Lazy Loading" status="Incomplete"/>
+                <ConceptRow name="Integrate Css Compiler (Scss)" status="Incomplete"/>
+                <ConceptRow name="Animations" status="Incomplete"/>
+                <ConceptRow name="3rd Party API" status="Incomplete"/>
+                <ConceptRow name="GraphQL" status="Incomplete"/>                                                                                  
               </tbody>
             </table>            
         </div>

@@ -7,7 +7,7 @@ class Callback extends React.Component {
     super(props);
 
       if (/access_token|id_token|error/.test(window.location.hash)) {
-        this.props.auth.handleAuthentication();
+        props.auth.handleAuthentication();
       }    
   }
  
