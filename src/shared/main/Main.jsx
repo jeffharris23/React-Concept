@@ -6,7 +6,6 @@ import Form from '../../pages/Form';
 import Callback from '../../pages/Callback';
 import Dashboard from '../../pages/Dashboard';
 import Login from '../../pages/Login';
-import history from '../../history';
 import PrivateRoute from '../../components/PrivateRoute';
 
 
@@ -20,14 +19,16 @@ class Main extends React.Component {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-md-8">    
+                        
                         <Switch>
-                            <Route exact path='/' component={Home}  />
-                            <Route exact path='/concepts' component={Concepts}  />
+                            <Route exact path='/' component={Home} wrapper="home"/>
+                            <Route exact path='/concepts' component={Concepts}  wrapper="concepts another-class"/>
                             <Route exact path='/form' component={Form}  />
-                            <Route path="/login" render={()=><Login auth={this.props.auth}/>}/>
+                            <Route path="/login" render={(props)=><Login auth={this.props.auth} {...props}/>}/>
                             <PrivateRoute path='/dashboard' component={Dashboard} auth={this.props.auth}/>
-                            <Route path="/callback" render={()=><Callback auth={this.props.auth}/>}/>
-                        </Switch>                   
+                            <Route path="/callback" render={(props)=><Callback auth={this.props.auth} {...props}/>}/>
+                        </Switch>      
+           
                     </div>
                 </div>
             </div>  

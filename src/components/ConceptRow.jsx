@@ -3,7 +3,14 @@ class ConceptRow extends React.Component {
     render() {
       return (
         <tr>
-            <th scope="row">{ this.props.name }</th>
+            <th scope="row">
+                { this.props.name }
+                {
+                    this.props.sub !== ''  && (
+                        <p><small dangerouslySetInnerHTML={{__html: this.props.sub}} ></small></p>
+                    )
+                }
+            </th>
             
                 {
                     this.props.status === 'Completed' && (

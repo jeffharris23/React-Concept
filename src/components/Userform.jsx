@@ -10,7 +10,7 @@ const mapDispatchToProps = {
 };
 
 function mapStateToProps(state) {
-  return { user: state.user };
+  return { user: state.rootReducer.user };
 }
 
 class Userform extends Component {
@@ -20,7 +20,8 @@ class Userform extends Component {
         showForm: false
       };
 
-     console.log(this.state);
+    console.log(props);
+
   }  
 
   toggleSavedMessage = () => {
@@ -54,7 +55,7 @@ class Userform extends Component {
           )}
           initialValues={{
             name: this.props.user.name,
-            email: this.props.user.email,
+            email: this.props.user.email,        
           }}
           onSubmit={(values, actions) => {
             // this could also easily use props or other

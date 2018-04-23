@@ -11,7 +11,6 @@ import {
 class PrivateRoute extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props);
   }
  
 

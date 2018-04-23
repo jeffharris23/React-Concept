@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import Header from './shared/header/Header';
-import Main from './shared/main/Main';
-import NameContext from './state/context';
+import ClassWrap from './components/ClassWrap'
+
 
 
 class App extends Component {
@@ -12,12 +11,7 @@ class App extends Component {
   }  
   render() {
     return (
-      <NameContext.Provider value="">
-        <div className="wrapper">
-          <Header auth={this.props.auth}/>
-          <Main auth={this.props.auth} />
-        </div>
-      </NameContext.Provider>
+      <ClassWrap auth={this.props.auth}/>
     );
   }
 }

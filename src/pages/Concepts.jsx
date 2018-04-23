@@ -14,13 +14,13 @@ class Concepts extends React.Component {
                 </tr>
               </thead>
               <tbody>
-                <ConceptRow name="Routing" status="Completed"/>
-                <ConceptRow name="Forms/Validation (Formik, Yup)" status="Completed"/>
-                <ConceptRow name="State Management (Redux)" status="Completed"/>
-                <ConceptRow name="React's version of Services" status="Completed"/>
-                <ConceptRow name="Auth (AuthO)" status="Completed"/>
-                <ConceptRow name="Authenticated Route (auth guard)" status="Completed"/>
-                <ConceptRow name="Interceptors/Middleware (add route class to body)" status="Incomplete"/>
+                <ConceptRow name="Routing" sub="Used React Router 4" status="Completed"/>
+                <ConceptRow name="Forms/Validation" sub="Used third party form libraries: Formik, Yup." status="Completed"/>
+                <ConceptRow name="State Management" sub="Redux" status="Completed"/>
+                <ConceptRow name="React's version of Services" sub="Created a high level auth provider and passed down to components through props...Not sure if this is the best way..." status="Completed"/>
+                <ConceptRow name="Auth" sub="Integrated with 3rd party auth system Auth0." status="Completed"/>
+                <ConceptRow name="Authenticated Route/Route Guard" sub={"<div>The top level <a href='/dashboard'>dashboard</a> page is protected and can only be accessed when logged in.</div>"} status="Completed"/>
+                <ConceptRow name="Interceptors/Middleware" sub="Used react-router-redux. Listened for route change to add wrapper class." status="Completed"/>
                 <ConceptRow name="CLI stuff (component generators, build stuff)" status="Incomplete"/>
                 <ConceptRow name="Lazy Loading" status="Incomplete"/>
                 <ConceptRow name="Integrate Css Compiler (Scss)" status="Incomplete"/>
