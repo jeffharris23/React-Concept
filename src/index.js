@@ -7,12 +7,16 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import rootReducer from './store/reducers';
+import Auth from './services/Auth/Auth';
 const store = createStore(rootReducer);
+
+const auth = new Auth();
+
 
 ReactDOM.render((
     <Provider store={store}>
       <BrowserRouter>
-        <App />
+        <App auth={auth}/>
       </BrowserRouter>
     </Provider>
   ), document.getElementById('root'));

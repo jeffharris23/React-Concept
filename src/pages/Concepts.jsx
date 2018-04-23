@@ -23,16 +23,37 @@ class Concepts extends React.Component {
                 </tr> 
                 <tr>
                   <th scope="row">State Management (Redux)</th>
-                  <td>Not Completed <i className="fas fa-times red"></i></td>
+                  <td>Completed <i className="fas fa-check green"></i></td>
                 </tr> 
+                <tr>
+                  <th scope="row">React's version of Services</th>
+                  <td>Completed (Auth) <i className="fas fa-check green"></i></td>
+                </tr>   
+                <tr>
+                  <th scope="row">Auth (AuthO)</th>
+                  <td>Completed <i className="fas fa-check green"></i></td>
+                </tr>   
+                <tr>
+                  <th scope="row">Authenticated Route (auth guard)</th>
+                  <td>Not Completed <i className="fas fa-times red"></i></td>
+                </tr>                                    
+                <tr>
+                  <th scope="row">CLI stuff (component generators, build stuff)</th>
+                  <td>Not Completed <i className="fas fa-times red"></i></td>
+                </tr>                            
+                <tr>
+                  <th scope="row">Lazy Loading</th>
+                  <td>Not Completed <i className="fas fa-times red"></i></td>
+                </tr>          
+                <tr>
+                  <th scope="row">Integrate Css Compiler (Scss)</th>
+                  <td>Not Completed <i className="fas fa-times red"></i></td>
+                </tr>                          
                 <tr>
                   <th scope="row">Animations</th>
                   <td>Not Completed <i className="fas fa-times red"></i></td>
                 </tr>                                 
-                <tr>
-                  <th scope="row">Route Guards</th>
-                  <td>Not Completed <i className="fas fa-times red"></i></td>
-                </tr>  
+
                 <tr>
                   <th scope="row">Interceptors</th>
                   <td>Not Completed <i className="fas fa-times red"></i></td>
@@ -41,10 +62,7 @@ class Concepts extends React.Component {
                   <th scope="row">3rd Party API</th>
                   <td>Not Completed <i className="fas fa-times red"></i></td>
                 </tr>
-                <tr>
-                  <th scope="row">Auth</th>
-                  <td>Not Completed <i className="fas fa-times red"></i></td>
-                </tr>
+
                 <tr>
                   <th scope="row">GraphQL</th>
                   <td>Not Completed <i className="fas fa-times red"></i></td>
@@ -52,7 +70,7 @@ class Concepts extends React.Component {
               </tbody>
             </table>            
         </div>
-        
+  
     );
   }
 }

@@ -8,6 +8,7 @@ class Home extends React.Component {
     this.state = {
       pageName: 'Home'
     };
+
   }
  
 
@@ -19,7 +20,7 @@ class Home extends React.Component {
           This is a sample react app. I've built all this stuff in Angular and
           now want to dig into React's way off doing similar functionality.
           <NavLink to="/concepts">
-            Visit the concepts page to see the roadmap.
+            Visit the concepts page to see the feature set roadmap.
           </NavLink>
         </p>
       </div>

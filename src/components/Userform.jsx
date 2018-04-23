@@ -37,9 +37,9 @@ class Userform extends Component {
         </div>  
         <div className="alert alert-warning">
           Current Saved User State: <br/>
-          <pre>
+          <code>
             {JSON.stringify(this.props.user)}
-          </pre>
+          </code>
         </div>
         <Formik
           validationSchema={Yup.object().shape(
