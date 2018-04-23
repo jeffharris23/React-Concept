@@ -35,37 +35,37 @@ class Concepts extends React.Component {
                 </tr>   
                 <tr>
                   <th scope="row">Authenticated Route (auth guard)</th>
-                  <td>Not Completed <i className="fas fa-times red"></i></td>
+                  <td>Not Complete <i className="fas fa-times red"></i></td>
                 </tr>                                    
                 <tr>
                   <th scope="row">CLI stuff (component generators, build stuff)</th>
-                  <td>Not Completed <i className="fas fa-times red"></i></td>
+                  <td>Not Complete <i className="fas fa-times red"></i></td>
                 </tr>                            
                 <tr>
                   <th scope="row">Lazy Loading</th>
-                  <td>Not Completed <i className="fas fa-times red"></i></td>
+                  <td>Not Complete <i className="fas fa-times red"></i></td>
                 </tr>          
                 <tr>
                   <th scope="row">Integrate Css Compiler (Scss)</th>
-                  <td>Not Completed <i className="fas fa-times red"></i></td>
+                  <td>Not Complete <i className="fas fa-times red"></i></td>
                 </tr>                          
                 <tr>
                   <th scope="row">Animations</th>
-                  <td>Not Completed <i className="fas fa-times red"></i></td>
+                  <td>Not Complete <i className="fas fa-times red"></i></td>
                 </tr>                                 
 
                 <tr>
                   <th scope="row">Interceptors</th>
-                  <td>Not Completed <i className="fas fa-times red"></i></td>
+                  <td>Not Complete <i className="fas fa-times red"></i></td>
                 </tr>                                                              
                 <tr>
                   <th scope="row">3rd Party API</th>
-                  <td>Not Completed <i className="fas fa-times red"></i></td>
+                  <td>Not Complete <i className="fas fa-times red"></i></td>
                 </tr>
 
                 <tr>
                   <th scope="row">GraphQL</th>
-                  <td>Not Completed <i className="fas fa-times red"></i></td>
+                  <td>Not Complete <i className="fas fa-times red"></i></td>
                 </tr>              
               </tbody>
             </table>            
