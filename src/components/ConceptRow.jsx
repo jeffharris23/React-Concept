@@ -1,4 +1,5 @@
 import React from 'react'
+import './concept-row.css'
 class ConceptRow extends React.Component {
     render() {
       return (

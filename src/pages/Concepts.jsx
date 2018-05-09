@@ -21,10 +21,11 @@ class Concepts extends React.Component {
                 <ConceptRow name="Auth" sub="Integrated with 3rd party auth system Auth0." status="Completed"/>
                 <ConceptRow name="Authenticated Route/Route Guard" sub={"<div>The top level <a href='/dashboard'>dashboard</a> page is protected and can only be accessed when logged in.</div>"} status="Completed"/>
                 <ConceptRow name="Interceptors/Middleware" sub="Used react-router-redux. Listened for route change to add wrapper class." status="Completed"/>
-                <ConceptRow name="CLI stuff (component generators, build stuff)" status="Incomplete"/>
                 <ConceptRow name="Lazy Loading" status="Incomplete"/>
-                <ConceptRow name="Integrate Css Compiler (Scss)" status="Incomplete"/>
-                <ConceptRow name="Animations" status="Incomplete"/>
+                <ConceptRow name="CSS Compiler (Scss)" status="Incomplete"/>    
+                <ConceptRow name="Animations" status="Incomplete"/>           
+                <ConceptRow name="PWA Stuff" status="Incomplete"/>
+                <ConceptRow name="CLI stuff (component generators, build stuff)" status="Incomplete"/>
                 <ConceptRow name="3rd Party API" status="Incomplete"/>
                 <ConceptRow name="GraphQL" status="Incomplete"/>                                                                                  
               </tbody>
